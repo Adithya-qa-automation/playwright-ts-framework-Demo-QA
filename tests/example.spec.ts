@@ -25,7 +25,7 @@ test("DemoQA Bookstore Workflow", async({page})=>{
 
   const bookStoreLogin = new BookStoreLogin(page);
   const username = process.env.USER_NAME!;
-  const password = process.env.password!;
+  const password = process.env.PASSWORD!;
 
   await test.step("Enter user credentials and hit the log in button", async()=>{
     await bookStoreLogin.loginWithCredential(username,password);
